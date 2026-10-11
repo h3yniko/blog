@@ -10,6 +10,12 @@ export type ContentLink = {
 export const links: ContentLink[] = (
   [
     {
+      type: "post",
+      title: "How to make decisions with a weighted decision matrix",
+      href: "https://h3yniko.substack.com/p/how-to-make-decisions-with-a-weighted",
+      date: "2026-10-11",
+    },
+    {
       type: "project",
       title: (
         <>
