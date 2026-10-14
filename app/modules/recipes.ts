@@ -1,14 +1,33 @@
 export const recipes = [
   {
+    slug: "ginger-and-lemon-tea",
+    name: "🍋 Ginger & Lemon Tea",
+    items: [
+      "2 cups (500 ml) water",
+      "2–3 cm fresh ginger root, peeled and thinly sliced or grated",
+      "Juice of ½ lemon",
+      "1–2 tsp honey (optional)",
+      "Lemon slices for serving (optional)",
+    ],
+    instructions: [
+      "Bring the water to a boil in a small saucepan.",
+      "Add the ginger and reduce to a simmer.",
+      "Simmer for 10–15 minutes. The longer it simmers, the stronger and spicier the ginger flavor.",
+      "Remove from the heat and strain into a mug.",
+      "Stir in the lemon juice.",
+      "Add honey to taste if desired.",
+      "Garnish with a lemon slice and serve warm.",
+    ],
+  },
+  {
     slug: "honey-soy-air-fryer-salmon",
-    name: "Honey soy air fryer salmon",
+    name: "🐟 Honey soy air fryer salmon",
     items: [
       "2 salmon fillets (130–180 g each)",
       "1 tbsp soy sauce",
       "1 tbsp honey",
       "1 tsp lemon juice",
       "1 tsp olive oil",
-      "1 garlic clove, grated",
       "A little bit of ginger",
     ],
     instructions: [
@@ -21,9 +40,9 @@ export const recipes = [
   },
   {
     slug: "cottage-cheese-casserole",
-    name: "Cottage cheese casserole",
+    name: "🫐 Cottage cheese casserole",
     items: [
-      "600 g cottage cheese",
+      "500 g cottage cheese",
       "3 eggs",
       "5 tbsp wheat flour",
       "3 tbsp sugar",
@@ -34,20 +53,20 @@ export const recipes = [
   },
   {
     slug: "savory-cottage-cheese-bake",
-    name: "Savory cottage cheese bake",
+    name: "🧀 Savory cottage cheese bake",
     items: [
-      "Cottage cheese",
-      "Eggs",
-      "Grated mozzarella",
-      "Tomato",
+      "1 pack cottage cheese (250 g)",
+      "3 eggs",
+      "100 g grated mozzarella",
+      "6 small tomatoes",
       "Spinach",
-      "Garlic",
+      "A bit of garlic",
       "Air fry at 170°C for 25 minutes",
     ],
   },
   {
     slug: "pancakes",
-    name: "Pancakes",
+    name: "🥞 Pancakes",
     items: [
       "1.3 L milk",
       "500 g flour",
