@@ -3,16 +3,22 @@ import { useEffect } from "react";
 import {
   isRouteErrorResponse,
   Links,
+  matchPath,
+  useLocation,
   Meta,
   Outlet,
   Scripts,
   ScrollRestoration,
 } from "react-router";
 
+import { pages } from "./routes";
+
 import type { Route } from "./+types/root";
 import "./app.css";
 
 export function Layout({ children }: { children: React.ReactNode }) {
+  const { pathname } = useLocation();
+  const page = pages.find((page) => matchPath(page.path, pathname));
   return (
     <html lang="en">
       <head>
@@ -39,6 +45,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           href={`${import.meta.env.VITE_HOST_URL}/rss.xml`}
         />
         {import.meta.env.DEV && <link rel="stylesheet" href="/virtual:stylex.css" />}
+        {page && !page.sitemap && <meta name="robots" content="noindex" />}
         <Meta />
         <Links />
       </head>
