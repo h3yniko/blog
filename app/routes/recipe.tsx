@@ -25,9 +25,8 @@ export default function Recipe({ loaderData: recipe }: Route.ComponentProps) {
         </Link>
       </p>
       <h1>{recipe.name}</h1>
-      {recipe.instructions && <h2>Ingredients</h2>}
       <ul {...stylex.props(styles.list)}>
-        {recipe.items.map((item) => (
+        {recipe.instructions.map((item) => (
           <li key={item} {...stylex.props(styles.item)}>
             <label {...stylex.props(styles.label)}>
               <input type="checkbox" defaultChecked={false} autoComplete="off" />
@@ -36,18 +35,6 @@ export default function Recipe({ loaderData: recipe }: Route.ComponentProps) {
           </li>
         ))}
       </ul>
-      {recipe.instructions && (
-        <>
-          <h2>Instructions</h2>
-          <ol>
-            {recipe.instructions.map((instruction) => (
-              <li key={instruction} {...stylex.props(styles.item)}>
-                {instruction}
-              </li>
-            ))}
-          </ol>
-        </>
-      )}
     </main>
   );
 }
