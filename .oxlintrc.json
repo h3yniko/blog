@@ -62,5 +62,13 @@
     "react": {
       "version": "19"
     }
-  }
+  },
+  "overrides": [
+    {
+      "files": ["**/*.tsx"],
+      "rules": {
+        "max-lines-per-function": "off"
+      }
+    }
+  ]
 }
